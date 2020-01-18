@@ -1,0 +1,12 @@
+doctrine_mongodb:
+  orm:
+        auto_generate_proxy_classes: '%kernel.debug%'
+        auto_mapping: true
+    connections:
+        default:
+            server: "%mongodb_server%"
+            options: {}
+    default_database: test_database
+    document_managers:
+        default:
+            auto_mapping: true
